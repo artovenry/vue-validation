@@ -1,0 +1,32 @@
+{
+  "name": "vue-validation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "coffee-loader": "^0.8.0",
+    "coffeescript": "^2.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "string": "^3.3.3",
+    "underscore": "^1.8.3",
+    "url-loader": "^0.6.2",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.2.1",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "yaml-loader": "^0.5.0",
+    "backbone": "^1.3.3",
+    "jquery": "^3.2.1",
+    "vuex": "^3.0.1"
+  }
+}
