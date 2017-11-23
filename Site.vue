@@ -17,11 +17,10 @@
 </template>
 
 <script lang="coffee">
-  import {mapState} from "vuex"
-  import Field from "./Field.vue"
+  import model from "model"
   export default
     computed: do ->
-      _.mapObject @$store.state, (item, attr)->
+      _.mapObject model, (item, attr)->
         get:      -> @$store.state[attr].value
-        set: (val)-> @$store.commit "#{attr}/validate", val: val
+        set: (val)-> @$store.commit "#{attr}/validate", val
 </script>

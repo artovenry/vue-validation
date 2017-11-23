@@ -1,7 +1,6 @@
 import Vue from "vue"
-import Site from "./Site.vue"
-import store from "./store.coffee"
-
+import Site from "Site.vue"
+import store from "store"
 new Vue
   render: (h)->h Site
   store: store

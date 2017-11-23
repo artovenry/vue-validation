@@ -12,6 +12,8 @@ module.exports=
   devtool: "inline-source-map"
   devServer: {host, port}
   resolve:
+    modules: [path.resolve("."), "node_modules"]
+    extensions:[".js", ".coffee" ,".json"]
     alias:
       vue: path.resolve("node_modules/vue/dist/vue.esm.js")
       vuex: path.resolve("node_modules/vuex/dist/vuex.esm.js")
@@ -21,7 +23,7 @@ module.exports=
       Coffee: test: /\.coffee$/, loader: "coffee-loader"
       Pug   : test: /\.pug$/, loader: "pug-loader"
       Vue   : test: /\.vue$/, loader: "vue-loader"
- 
+
   plugins: _.compact _.flatten _.values
     Define  : new webpack.DefinePlugin
       "process.env": NODE_ENV:  JSON.stringify if env is "development" then "development" else "production"
